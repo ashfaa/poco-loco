@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+        <link href="playgame.css" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="img/icon.jpg">
+        <title>poco loco</title>
+        
+    </head>
+    <body>
+        <div class="menu">
+            <input type="button" onclick="location.href='index.html';" value="main menu" />
+        </div>
+        <div class="game-display">
+        <div class="start" id="start">POCO LOCO!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="gbr"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="answer('A')"></div>
+                <div class="choice" id="B" onclick="answer('B')"></div>
+                <div class="choice" id="C" onclick="answer('C')"></div>
+                <div class="choice" id="D" onclick="answer('D')"></div>
+            </div>
+           
+            <div id="currentGame"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+        </div>
+       
+        <script type="text/javascript" src="index.js"></script> 
+    </body>
+</html>
